@@ -3,17 +3,33 @@ package mg.studio.android.survey;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.KeyEvent;
-import android.view.View;
+import android.view.*;
+import android.content.Intent;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.*;
+import static mg.studio.android.survey.ActivityController.IntToLayoutNum;
 
-import static mg.studio.android.survey.ActivityController.Int2LayoutNum;
-
-public class MainActivity extends AppCompatActivity {
+public class WelcomeActivity extends AppCompatActivity{
+    private Button nextButton = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ActivityController.activities.add(this);
         super.onCreate(savedInstanceState);
-        setContentView(Int2LayoutNum(0));
+        setContentView(IntToLayoutNum(0));
+        ActivityController.activities.add(this);
+        CheckBox acceptCheckBox = findViewById(R.id.acceptCheckBox);
+        nextButton = findViewById(R.id.nextButton);
+        acceptCheckBox.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b)
+                    nextButton.setVisibility(View.VISIBLE);
+            }
+        });
     }
+
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event){
         if(keyCode== KeyEvent.KEYCODE_BACK){
@@ -22,9 +38,13 @@ public class MainActivity extends AppCompatActivity {
         return super.onKeyDown(keyCode,event);
     }
     public void NextButtonDown(View view){
-
+        Intent intent = new Intent();
+        intent.setClass(this, Question1.class);
+        for (Integer i=1;i<13;++i)
+            intent.putExtra("answer"+i.toString(),"");
+        startActivity(intent);
     }
-    //used activity controller to instead
+    //used activity controller instead
     /*
     private void SaveAnswer(){
         //Need more details to complete
@@ -54,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private void SetLayout(int num){
-        setContentView(Int2LayoutNum(num));
+        setContentView(IntToLayoutNum(num));
         Button nextButton = (Button) findViewById(R.id.nextButton);
         nextButton.setOnClickListener(new View.OnClickListener(){
             @Override

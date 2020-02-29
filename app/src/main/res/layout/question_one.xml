@@ -35,10 +35,11 @@
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Which brand of phone will you choose if you are going to buy a new one ?"
+                android:text="@string/question1"
                 android:textSize="18sp" />
 
             <RadioGroup
+                android:id="@+id/radioGroup"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="30dp">
@@ -101,7 +102,9 @@
         android:layout_marginRight="40dp"
         android:layout_marginBottom="40dp"
         android:text="Next"
-        android:textColor="@color/colorBlack" />
+        android:textColor="@color/colorBlack"
+        android:onClick="NextButtonDown"
+        android:visibility="invisible"/>
 
     <!-- END    : Your code should be within this block -->
 </LinearLayout>

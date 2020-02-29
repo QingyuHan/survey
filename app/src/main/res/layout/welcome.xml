@@ -7,7 +7,7 @@
     <LinearLayout
         android:id="@+id/welcomeLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="40dp"
@@ -75,13 +75,15 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/welcomeLayout"
+        android:layout_below="@id/acceptCheckBox"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginBottom="40dp"
         android:background="@color/colorPrimary"
         android:text="LET'S START!"
-        android:textColor="@color/colorBlack" />
+        android:textColor="@color/colorBlack"
+        android:onClick="NextButtonDown"
+        android:visibility="invisible"/>
 
     <CheckBox
         android:id="@+id/acceptCheckBox"
@@ -89,8 +91,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="I accept these requests."
-        android:layout_above="@+id/nextButton"
+        android:layout_below="@id/welcomeLayout"
         android:layout_marginBottom="40dp"
+
         />
 
     <!-- END    : Your code should be within this block -->

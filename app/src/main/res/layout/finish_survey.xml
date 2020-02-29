@@ -44,7 +44,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/nextButton"
+        android:id="@+id/finishButton"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -54,7 +54,7 @@
         android:layout_marginRight="40dp"
         android:layout_marginBottom="40dp"
         android:text="FINISH"
-        android:textColor="@color/colorBlack" />
+        android:textColor="@color/colorBlack"/>
 
     <!-- END    : Your code should be within this block -->
 </LinearLayout>

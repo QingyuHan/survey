@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Survey</string>
+    <string name="question1">Which brand of phone will you choose if you are going to buy a new one ?</string>
+    <string name="question2">How much does your phone cost?</string>
+    <string name="question3">What kind of phone are you using?</string>
+    <string name="question4">What functions does your phone have now?</string>
+    <string name="question5">What functions are the most often used?</string>
+    <string name="question6">What functions do you expect your phone to have in the future?</string>
+    <string name="question7">In which condition will you buy a new phone?</string>
+    <string name="question8">Which brand of phone will you choose if you are going to buy a new one?</string>
+    <string name="question9">What characteristic do you think is most important to evaluate a phone?</string>
+    <string name="question10">How old are you?</string>
+    <string name="question11">What\'s your gender?</string>
+    <string name="question12">How much money do you earn per month?</string>
 </resources>

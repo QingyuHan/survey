@@ -35,13 +35,14 @@
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="How old are you?"
+                android:text="@string/question10"
                 android:textSize="18sp" />
 
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="30dp">
+                android:padding="30dp"
+                android:id="@+id/radioGroup">
 
                 <RadioButton
                     android:id="@+id/radioButton1"
@@ -84,7 +85,9 @@
         android:layout_marginRight="40dp"
         android:layout_marginBottom="40dp"
         android:text="Next"
-        android:textColor="@color/colorBlack" />
+        android:textColor="@color/colorBlack"
+        android:onClick="NextButtonDown"
+        android:visibility="invisible"/>
 
     <!-- END    : Your code should be within this block -->
 </LinearLayout>
