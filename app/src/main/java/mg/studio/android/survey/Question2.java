@@ -9,9 +9,11 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import static mg.studio.android.survey.ActivityController.IntToLayoutNum;
+import static mg.studio.android.survey.DataConverter.IntToLayoutNum;
 
 public class Question2 extends AppCompatActivity{
+    private int layoutNum = 2;
+    private Class nextActivity = Question3.class;
     private String[] answers = new String[13];
     private Button nextButton = null;
     private RadioGroup radioGroup = null;
@@ -20,7 +22,7 @@ public class Question2 extends AppCompatActivity{
         ActivityController.activities.add(this);
         super.onCreate(savedInstanceState);
         LoadAnswers();
-        setContentView(IntToLayoutNum(2));
+        setContentView(IntToLayoutNum(layoutNum));
         InitializeWidgets();
     }
     private void InitializeWidgets(){
@@ -40,12 +42,12 @@ public class Question2 extends AppCompatActivity{
     }
     private void SaveAnswers(){
         RadioButton radioButton = findViewById(radioGroup.getCheckedRadioButtonId());
-        answers[2] = radioButton.getText().toString();
+        answers[layoutNum] = radioButton.getText().toString();
     }
     public void NextButtonDown(View view){
         SaveAnswers();
         Intent intent =  new Intent();
-        intent.setClass(this, Question3.class);
+        intent.setClass(this, nextActivity);
         for (Integer i =1;i<13;++i){
             intent.putExtra("answer"+i.toString(),answers[i]);
         }

@@ -48,31 +48,31 @@
                     android:id="@+id/radioButton1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="When the old phone has been used for a year or two. (but it still works)" />
+                    android:text="@string/condition1" />
 
                 <RadioButton
                     android:id="@+id/radioButton2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="When the old phone has been used for more than three years.(but it still works)" />
+                    android:text="@string/condition2" />
 
                 <RadioButton
                     android:id="@+id/radioButton3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="When the old phone breks down." />
+                    android:text="@string/condition3" />
 
                 <RadioButton
                     android:id="@+id/radioButton4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="When a new phone is released." />
+                    android:text="@string/condition4" />
 
                 <RadioButton
                     android:id="@+id/radioButton5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Others" />
+                    android:text="@string/condition5" />
 
             </RadioGroup>
 

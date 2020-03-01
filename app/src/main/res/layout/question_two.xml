@@ -48,31 +48,31 @@
                     android:id="@+id/radioButton1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Under 1000" />
+                    android:text="@string/cost1" />
 
                 <RadioButton
                     android:id="@+id/radioButton2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="1000-1999" />
+                    android:text="@string/cost2" />
 
                 <RadioButton
                     android:id="@+id/radioButton3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="2000-2999" />
+                    android:text="@string/cost3" />
 
                 <RadioButton
                     android:id="@+id/radioButton4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="3000-3999" />
+                    android:text="@string/cost4" />
 
                 <RadioButton
                     android:id="@+id/radioButton5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="More than 4000" />
+                    android:text="@string/cost5" />
 
             </RadioGroup>
 

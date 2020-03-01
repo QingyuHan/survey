@@ -9,12 +9,12 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 
-import static mg.studio.android.survey.ActivityController.IntToLayoutNum;
+import static mg.studio.android.survey.DataConverter.IntToLayoutNum;
 
 public class Question4 extends AppCompatActivity {
+    private int layoutNum = 4;
+    private Class nextActivity = Question5.class;
     private String[] answers = new String[13];
     private Button nextButton = null;
     @Override
@@ -22,13 +22,13 @@ public class Question4 extends AppCompatActivity {
         ActivityController.activities.add(this);
         super.onCreate(savedInstanceState);
         LoadAnswers();
-        setContentView(IntToLayoutNum(4));
+        setContentView(IntToLayoutNum(layoutNum));
         InitializeWidgets();
     }
     private void InitializeWidgets(){
         nextButton = findViewById(R.id.nextButton);
         for (int i =1;i<=7;++i){
-            ((CheckBox)findViewById(ActivityController.IntToCheckBoxNum(i))).setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            ((CheckBox)findViewById(DataConverter.IntToCheckBoxNum(i))).setOnCheckedChangeListener(new OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                     if (b){
@@ -45,16 +45,16 @@ public class Question4 extends AppCompatActivity {
     }
     private void SaveAnswers(){
         for (int i =1;i<=7;++i){
-            CheckBox checkBox = findViewById(ActivityController.IntToCheckBoxNum(i));
+            CheckBox checkBox = findViewById(DataConverter.IntToCheckBoxNum(i));
             if (checkBox.isChecked()){
-                answers[4]+=checkBox.getText().toString()+"\n";
+                answers[layoutNum]+=checkBox.getText().toString()+"\n";
             }
         }
     }
     public void NextButtonDown(View view){
         SaveAnswers();
         Intent intent =  new Intent();
-        intent.setClass(this, Question5.class);
+        intent.setClass(this, nextActivity);
         for (Integer i =1;i<13;++i){
             intent.putExtra("answer"+i.toString(),answers[i]);
         }

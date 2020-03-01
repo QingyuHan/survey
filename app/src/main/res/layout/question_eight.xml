@@ -48,43 +48,43 @@
                     android:id="@+id/radioButton1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Iphone" />
+                    android:text="@string/phonetype1" />
 
                 <RadioButton
                     android:id="@+id/radioButton2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nokia" />
+                    android:text="@string/phonetype2" />
 
                 <RadioButton
                     android:id="@+id/radioButton3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Samsung" />
+                    android:text="@string/phonetype3" />
 
                 <RadioButton
                     android:id="@+id/radioButton4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="MI" />
+                    android:text="@string/phonetype4" />
 
                 <RadioButton
                     android:id="@+id/radioButton5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Lenovo" />
+                    android:text="@string/phonetype5" />
 
                 <RadioButton
                     android:id="@+id/radioButton6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Sony" />
+                    android:text="@string/phonetype6" />
 
                 <RadioButton
                     android:id="@+id/radioButton7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Others" />
+                    android:text="@string/phonetype7" />
             </RadioGroup>
 
         </LinearLayout>

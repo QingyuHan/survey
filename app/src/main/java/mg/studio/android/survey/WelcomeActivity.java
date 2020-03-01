@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.*;
-import static mg.studio.android.survey.ActivityController.IntToLayoutNum;
+import static mg.studio.android.survey.DataConverter.IntToLayoutNum;
 
 public class WelcomeActivity extends AppCompatActivity{
     private Button nextButton = null;
@@ -44,47 +44,5 @@ public class WelcomeActivity extends AppCompatActivity{
             intent.putExtra("answer"+i.toString(),"");
         startActivity(intent);
     }
-    //used activity controller instead
-    /*
-    private void SaveAnswer(){
-        //Need more details to complete
-    }
-    private void LoadAnswer(){
-        //Need more details to complete
-    }
-    private void NextLayout(){
-        SaveAnswer();
-        ++layoutNum;
-        if(layoutNum>13){
-            layoutNum=13;
-            finish();
-        }
-        else {
-            SetLayout(layoutNum);
-        }
-    }
-    private void PreLayout(){
-        LoadAnswer();
-        --layoutNum;
-        if(layoutNum<0){
-            layoutNum=0;
-        }
-        else{
-            SetLayout(layoutNum);
-        }
-    }
-    private void SetLayout(int num){
-        setContentView(IntToLayoutNum(num));
-        Button nextButton = (Button) findViewById(R.id.nextButton);
-        nextButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                NextLayout();
-            }
-        });
-        //Other components' initialization
-
-    }
-    */
 
 }

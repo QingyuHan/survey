@@ -48,31 +48,31 @@
                     android:id="@+id/radioButton1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I haven't got a jpb" />
+                    android:text="@string/income1" />
 
                 <RadioButton
                     android:id="@+id/radioButton2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Under 3000" />
+                    android:text="@string/income2" />
 
                 <RadioButton
                     android:id="@+id/radioButton3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="3000-5000" />
+                    android:text="@string/income3" />
 
                 <RadioButton
                     android:id="@+id/radioButton4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="5000-10000" />
+                    android:text="@string/income4" />
 
                 <RadioButton
                     android:id="@+id/radioButton5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="more than 10000" />
+                    android:text="@string/income5" />
 
             </RadioGroup>
 

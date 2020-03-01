@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import static mg.studio.android.survey.ActivityController.IntToLayoutNum;
+import static mg.studio.android.survey.DataConverter.IntToLayoutNum;
 
 public class Question8 extends AppCompatActivity {
     private int layoutNum = 8;

@@ -2,13 +2,11 @@ package mg.studio.android.survey;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import static mg.studio.android.survey.ActivityController.IntToLayoutNum;
-import static mg.studio.android.survey.ActivityController.activities;
+import static mg.studio.android.survey.DataConverter.IntToLayoutNum;
 
 public class FinishActivity extends AppCompatActivity {
     private int layoutNum = 14;

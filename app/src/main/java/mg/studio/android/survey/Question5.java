@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
-import static mg.studio.android.survey.ActivityController.IntToLayoutNum;
+import static mg.studio.android.survey.DataConverter.IntToLayoutNum;
 
     public class Question5 extends AppCompatActivity {
         private int layoutNum = 5;
@@ -27,7 +27,7 @@ import static mg.studio.android.survey.ActivityController.IntToLayoutNum;
         private void InitializeWidgets(){
             nextButton = findViewById(R.id.nextButton);
             for (int i =1;i<7;++i){
-                ((CheckBox)findViewById(ActivityController.IntToCheckBoxNum(i))).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                ((CheckBox)findViewById(DataConverter.IntToCheckBoxNum(i))).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                     @Override
                     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                         if (b){
@@ -44,7 +44,7 @@ import static mg.studio.android.survey.ActivityController.IntToLayoutNum;
         }
         private void SaveAnswers(){
             for (int i =1;i<7;++i){
-                CheckBox checkBox = findViewById(ActivityController.IntToCheckBoxNum(i));
+                CheckBox checkBox = findViewById(DataConverter.IntToCheckBoxNum(i));
                 if (checkBox.isChecked()){
                     answers[layoutNum]+=checkBox.getText().toString()+"\n";
                 }

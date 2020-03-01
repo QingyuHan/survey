@@ -48,13 +48,13 @@
                     android:id="@+id/radioButton1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Male" />
+                    android:text="@string/gender1" />
 
                 <RadioButton
                     android:id="@+id/radioButton2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Female" />
+                    android:text="@string/gender2" />
 
             </RadioGroup>
 

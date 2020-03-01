@@ -48,43 +48,43 @@
                     android:id="@+id/checkBox1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Music functions" />
+                    android:text="@string/func1" />
 
                 <CheckBox
                     android:id="@+id/checkBox2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Photo functions" />
+                    android:text="@string/func2" />
 
                 <CheckBox
                     android:id="@+id/checkBox3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Game funcitons" />
+                    android:text="@string/func3" />
 
                 <CheckBox
                     android:id="@+id/checkBox4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Business functions\n(Word,Excel,ect.)" />
+                    android:text="@string/func4" />
 
                 <CheckBox
                     android:id="@+id/checkBox5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="GPS functions" />
+                    android:text="@string/func5" />
 
                 <CheckBox
                     android:id="@+id/checkBox6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Data functions\n(Bluetooth,WLAN,ect.)" />
+                    android:text="@string/func6" />
 
                 <CheckBox
                     android:id="@+id/checkBox7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Others" />
+                    android:text="@string/func7" />
 
             </LinearLayout>
 
