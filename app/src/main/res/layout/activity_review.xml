@@ -11,11 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
         android:layout_marginBottom="40dp"
         android:orientation="vertical">
 
@@ -29,12 +25,14 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/answerView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="TextView"
                     android:textColor="@color/colorBlack"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"/>
 
                 <Button
                     android:id="@+id/nextButton"

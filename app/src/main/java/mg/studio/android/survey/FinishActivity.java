@@ -6,15 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import static mg.studio.android.survey.DataConverter.IntToLayoutNum;
-
 public class FinishActivity extends AppCompatActivity {
-    private int layoutNum = 14;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         ActivityController.activities.add(this);
         super.onCreate(savedInstanceState);
-        setContentView(IntToLayoutNum(layoutNum));
+        setContentView(R.layout.finish_survey);
         InitializeWidgets();
     }
     private void InitializeWidgets(){
@@ -22,7 +19,7 @@ public class FinishActivity extends AppCompatActivity {
         finishButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ActivityController.Finish();
+                ActivityController.Finish();//close app
             }
         });
     }
