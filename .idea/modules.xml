@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Survey.iml" filepath="$PROJECT_DIR$/Survey.iml" group="Survey" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Survey/app" />
+      <module fileurl="file://$PROJECT_DIR$/ScanZxing.iml" filepath="$PROJECT_DIR$/ScanZxing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ScanZxing-master.iml" filepath="$PROJECT_DIR$/ScanZxing-master.iml" group="ScanZxing-master" />
+      <module fileurl="file://$PROJECT_DIR$/android-client.iml" filepath="$PROJECT_DIR$/android-client.iml" group="android-client" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="android-client/app" />
     </modules>
   </component>
 </project>
