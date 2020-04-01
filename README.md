@@ -14,7 +14,7 @@
     + Fill in surveys
     + Upload or store answers
     + Pattern lock
-    + ~~Create surveys~~
+    + ~~Create surveys~~(NOT REQUIRED, NOT IMPLEMENTED)
 
 ## SurveyServer URL
  http://120.79.148.199/SurveyServer
